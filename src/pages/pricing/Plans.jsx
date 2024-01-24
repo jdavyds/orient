@@ -23,10 +23,6 @@ export default function Plans() {
           </li>
           <li className="flex gap-2 items-center">
             <img src={check} alt="" />
-            Luggage Tracing
-          </li>
-          <li className="flex gap-2 items-center">
-            <img src={check} alt="" />
             Rewrap Service
           </li>
         </ul>

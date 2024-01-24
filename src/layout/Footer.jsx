@@ -1,7 +1,6 @@
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
-import sbo from "../assets/sbo.png";
 import gasus from "../assets/gasus.png";
 
 export default function Footer() {
@@ -41,10 +40,6 @@ export default function Footer() {
             <p>Monday - Sunday</p>
             <p>4:00 am - 7 pm</p>
           </div>
-          <nav className="flex flex-col items-start gap-2 mt-4">
-            <img src={sbo} alt="" />
-            Trusted Business
-          </nav>
           <h4></h4>
         </nav>
       </section>
