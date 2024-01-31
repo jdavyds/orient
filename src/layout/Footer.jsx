@@ -18,12 +18,12 @@ export default function Footer() {
         <nav className="flex justify-center font-[400] text-[#C9C9C9] py-2 md:py-12">
           <div className="flex flex-col gap-3">
             <h4 className="text-white mb-2 font-[700] text-lg">Quick Links</h4>
-            <Link to="/about">About</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/pricing">Pricing</Link>
+            <Link to="/about">About Us</Link>
+            {/* <Link to="/services">Services</Link> */}
+            {/* <Link to="/pricing">Pricing</Link> */}
             <Link to="/contact-us">Contact Us</Link>
-            <Link to="/pre-book">Pre-Book</Link>
-            <Link to="/blogs">Blogs</Link>
+            {/* <Link to="/pre-book">Pre-Book</Link> */}
+            {/* <Link to="/blogs">Blogs</Link> */}
           </div>
         </nav>
         <nav className="flex flex-col font-[400] gap-3 text-[#C9C9C9] py-2 md:py-12">
@@ -61,12 +61,12 @@ export default function Footer() {
           <span className="text-center md:text-start">
             © Orient Services. All Right Reserved
           </span>
-          <div className="flex flex-col gap-4 items-center text-center">
+          {/* <div className="flex flex-col gap-4 items-center text-center">
             <nav className="flex gap-5 underline">
               <Link to="">Privacy Policy</Link>
               <Link to="">Terms of Service</Link>
             </nav>
-          </div>
+          </div> */}
           <nav className="flex items-center justify-center gap-5  md:text-xl">
             <FaInstagram />
           </nav>

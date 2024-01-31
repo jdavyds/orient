@@ -1,5 +1,5 @@
 import img from "../../assets/bg.png";
-import { Btn } from "../../utils/Button";
+// import { Btn } from "../../utils/Button";
 
 export default function Hero() {
   return (
@@ -12,9 +12,10 @@ export default function Hero() {
         You Bring Your Luggage, We’ll Handle The Baggage Wraping
       </h2>
       <p className="text-lg md:text-2xl">
-        Secure Your Journey with Expert Bag and Baggage <br className="hidden md:block" /> Wrapping
+        Secure Your Journey with Expert Bag and Baggage{" "}
+        <br className="hidden md:block" /> Wrapping
       </p>
-      <Btn name="Contact Us" slug="/contact-us" />
+      {/* <Btn name="Contact Us" slug="/contact-us" /> */}
     </main>
   );
 }

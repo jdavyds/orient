@@ -3,14 +3,14 @@ import Header from "../../layout/Header";
 import ScrollToTop from "../../layout/Scroll";
 import Subscribe from "../../layout/Subscribe";
 import Out2 from "../../utils/Out2";
-import Blog from "./Blog";
+// import Blog from "./Blog";
 import Feat from "./Feat";
 import Hero from "./Hero";
 import Intro from "./Intro";
 import Quote from "./Quote";
-import Report from "./Report";
-import Reviews from "./Reviews";
-import Services from "./Services";
+// import Report from "./Report";
+// import Reviews from "./Reviews";
+// import Services from "./Services";
 import Why from "./Why";
 
 export default function Test() {
@@ -22,12 +22,12 @@ export default function Test() {
       <Quote />
       <Intro />
       <Feat />
-      <Services />
+      {/* <Services /> */}
       <Why />
-      <Blog />
+      {/* <Blog /> */}
       <Out2 />
-      <Reviews />
-      <Report />
+      {/* <Reviews /> */}
+      {/* <Report /> */}
       <Subscribe />
       <Footer />
     </main>

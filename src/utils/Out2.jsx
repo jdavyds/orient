@@ -1,4 +1,4 @@
-import { Btn, BtnB } from "./Button";
+import { Btn } from "./Button";
 
 export default function Out2() {
   return (
@@ -11,8 +11,8 @@ export default function Out2() {
         Travel with confidence.
       </p>
       <nav className="flex flex-wrap gap-5">
-        <Btn name="pre-BOOK OUR SERVICES now" slug="/pre-order" />
-        <BtnB name="check pricing plan" slug="/pricing" />
+        <Btn name="Contact Us" slug="/contact-us" />
+        {/* <BtnB name="check pricing plan" slug="/pricing" /> */}
       </nav>
     </main>
   );

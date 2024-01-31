@@ -3,7 +3,7 @@ import Header from "../../layout/Header";
 import ScrollToTop from "../../layout/Scroll";
 import Subscribe from "../../layout/Subscribe";
 import Out from "../../utils/Out2";
-import Awards from "./Awards";
+// import Awards from "./Awards";
 import Hero from "../../utils/Hero";
 import Story from "./Story";
 import Team from "./Team";
@@ -18,7 +18,7 @@ export default function Test() {
       <Story />
       <Values />
       <Team />
-      <Awards />
+      {/* <Awards /> */}
       <Out />
       <Subscribe />
       <Footer />

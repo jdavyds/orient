@@ -10,8 +10,8 @@ export default function Quote() {
         worry-free, knowing that your luggage is in safe hands with Orient
         Services.
       </q>
-      <p className="text-dark">Erus Dickson</p>
-      <p className="text-sm">CEO Orient Services</p>
+      {/* <p className="text-dark">Erus Dickson</p>
+      <p className="text-sm">CEO Orient Services</p> */}
     </section>
   );
 }

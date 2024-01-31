@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { Btn } from "../../utils/Button";
 
 export default function Form() {
@@ -87,13 +87,13 @@ export default function Form() {
                 CONNECT WITH US
               </h3>
               <nav className="flex gap-2 items-center text-xl">
-                <a
+                {/* <a
                   href="http://facebook.com/orientservices"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaFacebook />
-                </a>
+                </a> */}
                 <a
                   href="https://www.instagram.com/orientservices"
                   target="_blank"
@@ -101,7 +101,7 @@ export default function Form() {
                 >
                   <FaInstagram />
                 </a>
-                <a
+                {/* <a
                   href="http://twitter.com/orientservices"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -114,7 +114,7 @@ export default function Form() {
                   rel="noopener noreferrer"
                 >
                   <FaYoutube />
-                </a>
+                </a> */}
               </nav>
               <span className="flex gap-2 items-center">
                 info@orientservices.ca
