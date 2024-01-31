@@ -6,7 +6,7 @@ import Out from "../../utils/Out2";
 // import Awards from "./Awards";
 import Hero from "../../utils/Hero";
 import Story from "./Story";
-import Team from "./Team";
+// import Team from "./Team";
 import Values from "./Values";
 
 export default function Test() {
@@ -17,7 +17,7 @@ export default function Test() {
       <Hero name="About Us" bg="#EB242B" />
       <Story />
       <Values />
-      <Team />
+      {/* <Team /> */}
       {/* <Awards /> */}
       <Out />
       <Subscribe />

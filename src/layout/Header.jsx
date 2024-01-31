@@ -9,8 +9,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 left-0 z-[9999] bg-white text-head shadow-md px-5 md:px-20 py-4 flex items-center">
       <NavLink to="/" className="flex justify-start">
-        <img src={logo} alt="" className="object-contain h-10 md:h-[unset]" />
+        <img src={logo} alt="" className="object-contain h-10 md:h-20" />
       </NavLink>
+      {/* <img src={logo} alt="" /> */}
       <nav
         className={`${
           open

@@ -7,7 +7,7 @@ import Out2 from "../../utils/Out2";
 import Feat from "./Feat";
 import Hero from "./Hero";
 import Intro from "./Intro";
-import Quote from "./Quote";
+// import Quote from "./Quote";
 // import Report from "./Report";
 // import Reviews from "./Reviews";
 // import Services from "./Services";
@@ -19,7 +19,7 @@ export default function Test() {
       <ScrollToTop />
       <Header />
       <Hero />
-      <Quote />
+      {/* <Quote /> */}
       <Intro />
       <Feat />
       {/* <Services /> */}

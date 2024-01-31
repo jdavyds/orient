@@ -1,5 +1,4 @@
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import gasus from "../assets/gasus.png";
 
@@ -16,14 +15,12 @@ export default function Footer() {
           </p>
         </div>
         <nav className="flex justify-center font-[400] text-[#C9C9C9] py-2 md:py-12">
-          <div className="flex flex-col gap-3">
-            <h4 className="text-white mb-2 font-[700] text-lg">Quick Links</h4>
-            <Link to="/about">About Us</Link>
-            {/* <Link to="/services">Services</Link> */}
-            {/* <Link to="/pricing">Pricing</Link> */}
-            <Link to="/contact-us">Contact Us</Link>
-            {/* <Link to="/pre-book">Pre-Book</Link> */}
-            {/* <Link to="/blogs">Blogs</Link> */}
+          <div className="flex flex-col gap-2">
+            <h4 className="text-white mb-2 font-[700] text-lg">
+              Opening Hours
+            </h4>
+            <p>Monday - Sunday</p>
+            <p>4:00 am - 7 pm</p>
           </div>
         </nav>
         <nav className="flex flex-col font-[400] gap-3 text-[#C9C9C9] py-2 md:py-12">
@@ -33,14 +30,6 @@ export default function Footer() {
             <p>Tel: 639-997-7482</p>
             <p>info@orientservices.ca</p>
           </div>
-          <div className="flex flex-col gap-2">
-            <h4 className="text-white mb-2 font-[700] text-lg">
-              Opening Hours
-            </h4>
-            <p>Monday - Sunday</p>
-            <p>4:00 am - 7 pm</p>
-          </div>
-          <h4></h4>
         </nav>
       </section>
       <div className="flex flex-col gap-10 leading-loose px-5 md:px-20 py-5 md:py-12">
