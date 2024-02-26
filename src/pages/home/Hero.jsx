@@ -9,11 +9,12 @@ export default function Hero() {
     >
       <div className="absolute w-full h-full top-0 left-0 bg-[rgb(0,0,0,0.4)] z-[-1]"></div>
       <h2 className="md:w-2/3 text-2xl md:text-[64px] font-[500] leading-normal">
-        You Bring Your Luggage, We’ll Handle The Baggage Wraping
+        Where Seamless Travel Begins
       </h2>
-      <p className="text-lg md:text-2xl">
-        Secure Your Journey with Expert Bag and Baggage{" "}
-        <br className="hidden md:block" /> Wrapping
+      <p className="text-lg md:text-2xl md:w-2/3">
+        Protect your luggage with a touch of personality! Our wrapping service
+        ensures your bags are secure, recognizable, and stylishly protected,
+        wherever you travel.
       </p>
       {/* <Btn name="Contact Us" slug="/contact-us" /> */}
     </main>

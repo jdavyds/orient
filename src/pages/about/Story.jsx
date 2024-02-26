@@ -36,6 +36,13 @@ export default function Story() {
           journeys and elevating the travel experience.
         </p>
       </div>
+      <div className="flex flex-col gap-5 md:text-center justify-center items-center col-span-2">
+        <h3 className="text-2xl md:text-[48px] text-head">Our Promise</h3>
+        <p className="">
+          A commitment to providing unparalleled service by focusing on quality,
+          customer satisfaction, and continuous improvement.
+        </p>
+      </div>
     </main>
   );
 }

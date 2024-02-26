@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Btn } from "../../utils/Button";
 
 export default function Form() {
@@ -11,8 +11,10 @@ export default function Form() {
     message: "",
   });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
   function handleSubmit(e) {
     e.preventDefault();
+    setLoading(true);
     fetch("https://formsubmit.co/ajax/info@orientservices.ca", {
       method: "POST",
       headers: {
@@ -30,6 +32,7 @@ export default function Form() {
       .then((data) => {
         console.log(data);
         setSent(true);
+        setLoading(false);
         setState({
           first: "",
           last: "",
@@ -38,7 +41,10 @@ export default function Form() {
           message: "",
         });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+      });
   }
 
   return (
@@ -73,7 +79,7 @@ export default function Form() {
               <h3 className="font-[600] md:font-[700] text-lg text-head">
                 Locations
               </h3>
-              <p>Ontario,Canada</p>
+              <p>YQR Regina, SK</p>
             </div>
             <div className="flex flex-col gap-3">
               <h3 className="font-[600] md:font-[700] text-lg text-head">
@@ -95,11 +101,18 @@ export default function Form() {
                   <FaFacebook />
                 </a> */}
                 <a
-                  href="https://www.instagram.com/orientservices"
+                  href="https://www.instagram.com/orientservicesca"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaInstagram />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555504812540"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
                 </a>
                 {/* <a
                   href="http://twitter.com/orientservices"
@@ -119,11 +132,11 @@ export default function Form() {
               <span className="flex gap-2 items-center">
                 info@orientservices.ca
               </span>
-              <h3 className="font-[600] md:font-[700] text-lg text-head">
+              {/* <h3 className="font-[600] md:font-[700] text-lg text-head">
                 Customer Support
               </h3>
               <span className="flex gap-2 items-center">+234 9065448855</span>
-              <span className="flex gap-2 items-center">+234 809 595 6720</span>
+              <span className="flex gap-2 items-center">+234 809 595 6720</span> */}
             </div>
           </div>
           <div className="w-full">
@@ -224,7 +237,9 @@ export default function Form() {
               <nav className="flex items-center justify-center gap-5 w-full">
                 <button
                   type="submit"
-                  className="font-[600]  lato bg-primary text-white  h-10 min-w-fit  md:w-1/2 rounded px-5"
+                  className={`font-[600]  lato bg-primary text-white  h-10 min-w-fit  md:w-1/2 rounded px-5
+                   ${loading ? "animate-pulse cursor-not-allowed" : ""}
+                  `}
                 >
                   SEND MESSAGE
                 </button>

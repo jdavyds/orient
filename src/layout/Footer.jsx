@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import gasus from "../assets/gasus.png";
 
 export default function Footer() {
@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <h4 className="text-white mb-2 font-[700] text-lg">Location</h4>
             <p>5201 Regina Ave, Regina, SK S4W 1B3, Canada</p>
-            <p>Tel: 639-997-7482</p>
+            <p>Tel: 639-382-0226</p>
             <p>info@orientservices.ca</p>
           </div>
         </nav>
@@ -57,7 +57,20 @@ export default function Footer() {
             </nav>
           </div> */}
           <nav className="flex items-center justify-center gap-5  md:text-xl">
-            <FaInstagram />
+            <a
+              href="https://www.instagram.com/orientservicesca"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+            href="https://www.facebook.com/profile.php?id=61555504812540"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
+          </a>
           </nav>
         </span>
       </div>

@@ -10,7 +10,7 @@ export default function Feat() {
   return (
     <main className="flex flex-col gap-10 px-5 md:px-20 py-10">
       <h3 className="text-2xl md:text-[48px] text-head mx-auto text-center">
-        We Protect Your Luggage From
+        The Importance of Wrapping Your Luggage
       </h3>
       <div className="flex flex-col md:grid grid-cols-2 gap-10 md:gap-20 md:items-center">
         <div className="flex flex-col gap-5">
@@ -34,6 +34,11 @@ export default function Feat() {
             desc="Protecting against spills of liquids, oils, or substances that might accidentally come into contact with the luggage during travel."
             img={icon4}
           />
+          <Single
+            title="Unpredictable Zippers"
+            desc="Unpredictable zippers are no longer a concern with decreased chances of accidental opening."
+            img={icon2}
+          />
         </div>
         <div className="flex flex-col gap-5">
           <Single
@@ -50,6 +55,11 @@ export default function Feat() {
             title="Wear and Tear"
             desc="Minimizing wear and tear caused by constant movement, vibrations, and handling throughout the journey."
             img={icon7}
+          />
+          <Single
+            title="Loose Items"
+            desc="Ensures that loose items, such as sports equipment, remain securely in place."
+            img={icon1}
           />
         </div>
       </div>
